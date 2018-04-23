@@ -1,4 +1,4 @@
-# how-consumer-reviews-affect-your-star-ratings
+# How Consumer Reviews Affect the Star Ratings
 
 # Packages
 * sklearn
