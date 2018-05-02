@@ -40,9 +40,16 @@ Finally, I got the sentiment for each aspects of every text review, and investig
 * `wordvector_train.csv`: Word vector training dataset. Parsed reviews from `reviews.csv`.
 * `labelled1.csv`: Manually labelled reviews on aspects (ambience, price, service, food quality).
 * `labelled3.csv`: Manually labelled reviews on sentiments (positive, negative).
+* `catandsen.csv`: Converted `output1.csv` and `output2.csv` together.
 
 # Scripts
 
+* `reviews and stars extraction.py`: Script that matching and parsing reviews, stars, and categories out from `business.json` and `review.json`.
+* `Word vector train & CNN models.ipynb`: Script that shows the wordvector training process, traning, predicting and classification report of borh aspect CNN model and sentiment CNN model.
+* `SVM Comparison.py`: Supoort vector machine model for performance comparison.
+* `catandsen generate.py`: Converting `output1.csv` and `output2.csv` together.
+* `regression.py`: Regression analysis on Chiness food.
+* `sentiment analysis.py`: Sentiment analysis on the whole results.
 
 # Packages
 * sklearn
