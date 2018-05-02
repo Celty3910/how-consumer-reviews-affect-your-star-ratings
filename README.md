@@ -1,5 +1,9 @@
 # How Consumer Reviews Affect the Star Ratings
 
+This project mainly used data from the Yelp Challenge Dataset https://www.yelp.com/dataset/challenge.
+
+I used business.json and review.json for model building and analysis.
+
 # Description
 
 Online reviews are considered as the “new frontier in word-of-mouth marketing”. Yelp, as the biggest review-service provider, becomes a very important information platform for foodservice industry to advertising themselves and for customers to find a better restaurant. Within this review system, star ratings and reviews provided by customers probably are the most essential two features: one summarizes the assessment of the whole experience and the other one indicates specific pros and cons. Those stars and reviews influence the food service providers’ business a lot.
@@ -28,11 +32,16 @@ Finally, I got the sentiment for each aspects of every text review, and investig
 
 * `business.json`: Contains business data including location data, attributes, and categories.
 * `review.json`: Contains full review text data including the user_id that wrote the review and the business_id the review is written for.
-* `stars only.csv`: Matched dataset of `business.json` and `review.json`
-* `reviews+categories`:
+* `stars only.csv`: Matched dataset of `business.json` and `review.json`. Include star ratings of reviews and business id (the same as `reviews.csv` and `categories.csv`). Can be used together with `reviews.csv` and `categories.csv`.
+* `reviews.csv`: Matched dataset of `business.json` and `review.json`. Include reviews and business id (the same as `star only.csv` and `categories.csv`). Can be used together with `categories.csv` and `star only.csv`.
+* `categories.csv`: Matched dataset of `business.json` and `review.json`. Include categories of reviews and business id (the same as `reviews.csv` and `star only.csv`). Can be used together with `reviews.csv` and `star only.csv`.
 * `output1.csv`: Predicted aspecte results using reviews in `stars only.csv`.
 * `output2.csv`: Predicted sentiment results using reviews in `stars only.csv`.
+* `wordvector_train.csv`: Word vector training dataset. Parsed reviews from `reviews.csv`.
+* `labelled1.csv`: Manually labelled reviews on aspects (ambience, price, service, food quality).
+* `labelled3.csv`: Manually labelled reviews on sentiments (positive, negative).
 
+# Scripts
 
 
 # Packages
